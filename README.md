@@ -2,6 +2,10 @@
 
 The following commands are for the Linux Operating System 
 
+# NOTE 
+
+This is just the template u can edit the yaml files to include you images and Number of replicas 
+
 # Objectives:
 1) to create a kubernetes cluster
 2) to deploy the web application 
