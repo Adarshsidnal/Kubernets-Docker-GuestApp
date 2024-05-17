@@ -39,7 +39,6 @@ nodes:
     hostPort: 80
   - containerPort: 30950
     hostPort: 443
-
 ```
 
 ## Step 3: Run the command to create the cluster
@@ -57,7 +56,7 @@ sudo snap install kubectl --classic
 ## Step 4: Apply the Redis Deployment from the redis-leader-deployment.yaml file
 
 ```bash
-Kubectl apply -f redis-leader-deployment.yaml
+kubectl apply -f redis-leader-deployment.yaml
 
 kubectl get pods 
 
@@ -67,7 +66,7 @@ You should see pods up running
 ## Step 5:Apply the Redis Service from the following redis-leader-service.yaml file:
 
 ```bash
-Kubectl apply -f redis-leader-service.yaml
+kubectl apply -f redis-leader-service.yaml
 ```
 
 Query the list of Services to verify that the Redis Service is running:
@@ -79,7 +78,7 @@ kubectl get service
 ## Step 6: Setup Redis followers
 
 ```bash
-Kubectl apply -f redis-follower-deployment.yaml
+kubectl apply -f redis-follower-deployment.yaml
 ```
 
 Verify that the two Redis follower replicas are running by querying the list of Pods:
